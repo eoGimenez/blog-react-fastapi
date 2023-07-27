@@ -37,7 +37,7 @@ def update_post(id: int, request: PostBase, db: Session = Depends(get_db)):
 @router.post('/image')
 def upload_image(image: UploadFile = File(...)):
     letter = string.ascii_letters
-    random_str = ''.join(random.choice(letter) for i in random(6))
+    random_str = ''.join(random.choice(letter) for i in range(6))
     new = f'_{random_str}'
     filename = new.join(image.filename.rsplit('.', 1))
     path = f'images/{filename}'
