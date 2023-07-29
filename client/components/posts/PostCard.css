@@ -44,6 +44,7 @@
 .post--card--author {
 	margin-bottom: 1.8rem;
 	display: flex;
+    font-weight: 400;
 	justify-content: center;
 	align-items: center;
 	gap: 1rem;

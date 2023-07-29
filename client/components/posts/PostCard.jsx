@@ -11,7 +11,7 @@ export default function PostCard({ post }) {
 				<div className='post--card--content--container'>
 					<h2 className='post--card--title'>{post.title}</h2>
 					<p className='post--card--content'>{post.content}</p>
-					<h3 className='post--card--author'>{post.author}</h3>
+					<h3 className='post--card--author'> by: {post.author}</h3>
 				</div>
 				<button className='post--card--buttom' onClick={null} >
 					Delete post

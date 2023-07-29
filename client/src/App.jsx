@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import './App.css';
 import PostCard from '../components/posts/PostCard';
+import NewPost from '../components/newpost/NewPost';
 
 export default function App() {
 	const [posts, setPosts] = useState();
@@ -27,8 +28,11 @@ export default function App() {
 
 	return (
 		<div className='app'>
-			<h1 className='app--web--title'>Esta Web es con fines educativos, por consecunencia no estara facoptirzada al 100%</h1>
+			<h1 className='app--web--title'>
+				Esta Web es con fines educativos, por consecunencia no estara facoptirzada al 100%
+			</h1>
 			{posts && posts.map((post, i) => <PostCard key={i} post={post} />)}
+			<NewPost />
 		</div>
 	);
 }
