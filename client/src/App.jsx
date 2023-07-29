@@ -26,8 +26,8 @@ export default function App() {
 	}, []);
 
 	return (
-		<div>
-			hola hola
+		<div className='app'>
+			<h1 className='app--web--title'>Esta Web es con fines educativos, por consecunencia no estara facoptirzada al 100%</h1>
 			{posts && posts.map((post, i) => <PostCard key={i} post={post} />)}
 		</div>
 	);

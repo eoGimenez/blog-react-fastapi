@@ -1,3 +1,74 @@
+.section--post--card {
+	margin-bottom: 4.4rem;
+	margin-inline: auto;
+}
+.post--card--container {
+	display: grid;
+	max-width: 40rem;
+	margin-inline: auto;
+	box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+	border-radius: 11px;
+	overflow: hidden;
+	background-color: var(--most--lighter);
+
+	transition: all 0.3s;
+
+	position: relative;
+}
+.post--card--img--container {
+}
 .post--card--img {
-    max-width: 26rem;
+	width: 100%;
+	max-height: 31rem;
+
+	transition: all 0.3s;
+}
+.post--card--content--container {
+	padding: 2.4rem 2.4rem 1.2rem;
+}
+.post--card--title {
+	font-size: 3rem;
+	text-align: center;
+	margin-bottom: 2.4rem;
+}
+.post--card--content {
+	cursor: pointer;
+	font-size: 1.6rem;
+	overflow: hidden;
+	max-width: 35ch;
+	letter-spacing: -0.04rem;
+	display: -webkit-box;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;
+}
+.post--card--author {
+	margin-bottom: 1.8rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+
+.post--card--buttom {
+	display: inline-block;
+	font-size: 1.6rem;
+	font-weight: 700;
+	text-decoration: none;
+	cursor: pointer;
+	padding: 0.6rem 2rem;
+	border-radius: 9px;
+	border: none;
+	font-family: inherit;
+	text-align: center;
+	margin-inline: auto;
+	margin-bottom: 2rem;
+	background-color: darkslateblue;
+	color: azure;
+
+	transition: all 0.3s;
+}
+
+.post--card--buttom:hover {
+	color: darkslateblue;
+	background-color: azure;
 }
