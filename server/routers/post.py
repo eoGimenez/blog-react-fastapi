@@ -24,7 +24,7 @@ def create_post(request: PostBase, db: Session = Depends(get_db)):
     return db_post.new_post(db, request)
 
 
-@router.delete('/')
+@router.delete('/{id}')
 def delete_post(id: int, db: Session = Depends(get_db)):
     return db_post.delete_post(id, db)
 
